@@ -1,34 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="root">
-        React is NOT rendered
-        <script src="https://unpkg.com/react@18.0.0-rc.0/umd/react.development.js"></script>
-        <script src="https://unpkg.com/react-dom@18.0.0-rc.0/umd/react-dom.development.js"></script>
-        <script>
-            const Person = props =>{
-                return React.createElement(`div`,{},[
-                    React.createElement(`h1`,{},props.name),
-                    React.createElement(`p`,{},props.ocupation)
-                ])
-            }
-
-            const App = ()=>{
-                return React.createElement(`div`,{},[
-                    React.createElement(`h1`,{className:"title"},"React is Rendered"),
-                    React.createElement(Person,{name:`Filip`, ocupation:`Programmer`},null),
-                    React.createElement(Person,{name:`Maja`, ocupation:`Designer`},null),
-                    React.createElement(Person,{name:`Ljilja`, ocupation:`Doctor`},null)
-                ])
-            }
-
-            ReactDOM.render(React.createElement(App),document.getElementById(`root`))
-        </script>
+      React is NOT rendered
+      <script src="https://unpkg.com/react@18.0.0-rc.0/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom@18.0.0-rc.0/umd/react-dom.development.js"></script>
+      <script src="./App.js"></script>
     </div>
-</body>
+  </body>
 </html>
